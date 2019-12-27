@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> <!--denne link referer til google material icons-->
+    
+    <title>Læringsportfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+ <body>
+    
+     <!--navigation-->
+     
+  <nav>
+     <section class="content">
+         
+        <h1>Læringsportfolio</h1>
+      
+      <section class="links">
+          
+          <a href="forside.html">Forside</a>
+          <a href="webudvikling.html">Webudvikling</a>
+          <a href="kommunikation.html">Kommunikation</a>
+          <a href="design.html">Design</a>
+          <a href="projekter.html">Eksamensprojekt</a>
+      
+      </section>
+        
+         <!--menu icon-->
+    
+        <i class="material-icons menu" onclick="menu()">menu</i> 
+         
+     </section>
+      
+      <!--dropdown meny-->
+      
+      <section class="dropdown">
+          
+        <a href="forside.html">Forside</a>
+          <a href="webudvikling.html">Webudvikling</a>
+          <a href="kommunikation.html">Kommunikation</a>
+          <a href="design.html">Design</a>
+          <a href="projekter.html">Eksamensprojekt</a>
+          
+      </section>
+     
+     </nav>  
+    
+    </body> 
+    
+    <script>
+    
+       var dropdown = document.querySelector("nav .dropdown") 
+       var button = document.querySelector("nav .menu")
+        
+       function menu() {
+           if (dropdown.style.display === "grid") {
+               dropdown.style.display = "none";
+                button.innerHTML = "menu";
+           }
+               else {
+                  dropdown.style.display = "grid";
+                    button.innerHTML = "close"
+               }
+       }
+       
+        addEventListener("resize", function() {
+            if (window.innerWidth > 700) {dropdown.style.display = "none";
+                button.innerHTML = "menu";}
+        } )
+        
+ </script>
+    
+    <!--Mit grid-->
+     
+   <section class="mitgrid">
+       
+            <div id="webudvikling">Webudvikling
+            </div>
+            
+            <div id="design">Design
+            </div>
+            
+            <div id="kommunikation">Kommunikation</div>
+            
+            <div id="eksamensprojekt">Eksamensprojekt
+            </div>
+            
+       <div id="footer">Footer</div>
+
+            
+            
+                
+</section>
+             
+    
+    
+    
+    
+</html>   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
